@@ -1,0 +1,149 @@
+/*
+// Key Colours
+	- White     : #f1f1f1
+	- Orange    : #f7921e
+	- Dark Grey : #515151
+
+// Button Colours
+	- Green	    : #51ec7c
+	- Blue	    : #51e7ec
+*/
+
+
+/*
+// To do:
+    - Work out typical screen sizes
+        > Desktop = 
+        > Tablet  = 
+        > Mobile  = 
+    - Figure out how to do Media Queries
+    - Set up Media Queries
+*/
+
+
+/*  MOBILE Small*/
+@media (max-width: 380px) {
+    
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    #panel-01 .panel-text {
+        top: 25%;
+    }
+    
+    #panel-01 h1 {
+        padding-bottom: 15px;
+    }
+    
+    #panel-01 hr {
+        margin-bottom: 20px;
+        min-width: 280px;
+    }
+    
+    .main-button {
+        height: 50px;
+        min-width: 240px;
+    }
+    
+}
+
+
+/*  MOBILE MEDIUM  */
+@media (max-width: 430px) and (min-width: 380px) {
+    
+    h1 {
+        font-size: 4.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    #panel-01 .panel-text {
+        top: 25%;
+    }
+    
+    #panel-01 h1 {
+        padding-bottom: 15px;
+    }
+    
+    #panel-01 hr {
+        margin-bottom: 20px;
+        min-width: 350px;
+    }
+    
+    .main-button {
+        height: 50px;
+        min-width: 280px;
+    }
+    
+}
+
+
+/*  TABLET */
+@media (max-width: 768px) and (min-width: 430px) {
+    
+    h1 {
+        font-size: 5.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+    }
+    
+    #panel-01 .panel-text {
+        top: 25%;
+    }
+    
+    #panel-01 h1 {
+        padding-bottom: 15px;
+    }
+    
+    #panel-01 hr {
+        margin-bottom: 20px;
+        min-width: 420px;
+    }
+    
+    .main-button {
+        height: 60px;
+        min-width: 280px;
+    }
+    
+}
+
+
+/*  TABLET */
+@media (max-width: 1366px) and (min-width: 768px) {
+    
+    h1 {
+        font-size: 6em;
+    }
+    
+    h3 {
+        font-size: 2.5em;
+    }
+    
+    #panel-01 .panel-text {
+        top: 22%;
+    }
+    
+    #panel-01 h1 {
+        padding-bottom: 15px;
+    }
+    
+    #panel-01 hr {
+        margin-bottom: 20px;
+        min-width: 420px;
+    }
+    
+    .main-button {
+        height: 60px;
+        min-width: 320px;
+    }
+    
+}

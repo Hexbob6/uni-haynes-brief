@@ -1,0 +1,131 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, "Roboto", sans-serif;
+}
+
+iframe {
+    border: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+li {
+    display: block;
+}
+
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    letter-spacing: -.06em;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    text-transform: inherit;
+    font: inherit;
+    letter-spacing: inherit;
+    background: none;
+    cursor: pointer;
+    overflow: visible;
+}
+
+:focus {
+    outline: 0;
+}
+
+
+/* FOR DARK GREY PANELS */
+.dark-theme {
+    background-color: #515151;
+    color: #f1f1f1;
+}
+
+.dark-theme span {
+    color: #f7921e;
+}
+
+.dark-theme hr {
+    border: none;
+    border-top: 3px solid #f1f1f1;
+    opacity: 0.5;
+}
+
+/* FOR WHITE PANELS */
+.light-theme {
+    background-color: #f1f1f1;
+    color: #515151;
+}
+
+.light-theme span {
+    color: #f7921e;
+}
+
+.light-theme hr {
+    border: none;
+    border-top: 2px solid #515151;
+    opacity: 0.5;
+}
+
+/* FOR ORANGE PANELS */
+.orange-theme {
+    background-color: #f7921e;
+    color: #f1f1f1;
+}
+
+.orange-theme span {
+    color: #515151;
+}
+
+.orange-theme hr {
+    border: none;
+    border-top: 2px solid #515151;
+    opacity: 0.5;
+}

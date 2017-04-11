@@ -1,0 +1,167 @@
+/*
+// Key Colours
+	- White     : #f1f1f1
+	- Orange    : #f7921e
+	- Dark Grey : #515151
+
+// Button Colours
+	- Green	    : #51ec7c
+	- Blue	    : #51e7ec
+*/
+
+
+
+body {
+    height: calc(3 * 100vh);
+}
+
+h1 {
+    font-size: 8em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+
+#panel-01 {
+    position: relative;
+    height: 100vh;
+    white-space: nowrap;
+}
+
+#panel-01 .panel-text {
+    width: 100%;
+    position: absolute;
+    top: 25%;
+}
+
+#panel-01 h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#panel-01 hr {
+    width: 70%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto 25px auto;
+}
+
+#panel-01 h3 {
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    width: 10%;
+    max-width: 150px;
+    min-width: 100px;
+    top: 20px;
+    left: 20px;
+    opacity: 0.5;
+    transition: all 200ms ease-in-out;
+    z-index: 100;
+}
+
+.logo:hover , .logo:active {
+    opacity: 1;
+}
+
+.main-button {
+    position: absolute;
+    margin: auto;
+    height: 80px;
+    width: 30%;
+    min-width: 400px;
+    color: #f1f1f1;
+    background-color: #51ec7c;
+    border-radius: 40px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+}
+
+.main-button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    transform: translateY(3px) translateX(-50%);
+}
+
+button h3 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#scroll-icon {
+    position: absolute;
+    margin: auto 0;
+    width: 3%;
+    max-width: 40px;
+    min-width: 30px;
+    opacity: 0.5;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+
+/*  PARALLAX  */
+
+.hero-parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/backgrounds/bike01_back.jpg);
+    background-size: auto 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.para-fore {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+}
+
+.para-mid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.para-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/backgrounds/bike01_fore.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
