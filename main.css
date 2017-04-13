@@ -11,23 +11,39 @@
 
 
 
-body {
-    height: calc(3 * 100vh);
-}
-
 h1 {
     font-size: 8em;
+}
+
+h2 {
+    font-size: 6em;
 }
 
 h3 {
     font-size: 3em;
 }
 
+h4 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 2em;
+    white-space: normal;
+}
+
+
+.panel {
+    position: relative;
+    white-space: nowrap;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
 
 #panel-01 {
-    position: relative;
     height: 100vh;
-    white-space: nowrap;
+    z-index: 100;
 }
 
 #panel-01 .panel-text {
@@ -59,35 +75,14 @@ h3 {
     min-width: 100px;
     top: 20px;
     left: 20px;
-    opacity: 0.5;
-    transition: all 200ms ease-in-out;
     z-index: 100;
 }
 
-.logo:hover , .logo:active {
-    opacity: 1;
-}
 
-.main-button {
-    position: absolute;
+button {
     margin: auto;
-    height: 80px;
-    width: 30%;
-    min-width: 400px;
     color: #f1f1f1;
     background-color: #51ec7c;
-    border-radius: 40px;
-    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 50;
-}
-
-.main-button:active {
-    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
-    left: 50%;
-    transform: translateY(3px) translateX(-50%);
 }
 
 button h3 {
@@ -96,6 +91,65 @@ button h3 {
     top: 50%;
     transform: translateY(-50%);
 }
+
+button h4 {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button i {
+    padding-top: 4px;
+    position: absolute;
+    font-size: 1.5em;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.primary-button {
+    position: absolute;
+    height: 80px;
+    width: 30%;
+    min-width: 400px;
+    border-radius: 40px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.primary-button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    left: 50%;
+    transform: translateY(3px) translateX(-50%);
+}
+
+.secondary-button {
+    position: relative;
+    height: 65px;
+    width: 60;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.tertiary-button {
+    position: relative;
+    height: 65px;
+    width: 48%;
+    margin-left: 2%;
+    background-color: #51e7ec;
+    border-radius: 10px;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.secondary-button:active , .tertiary-button:active {
+    box-shadow: 0 2px rgba(0, 0, 0, 0.8);
+    transform: translateY(3px);
+}
+
 
 #scroll-icon {
     position: absolute;
@@ -113,39 +167,381 @@ button h3 {
 
 /*  PARALLAX  */
 
-.hero-parallax-container {
-    position: relative;
-    width: 100%;
+    .hero-parallax-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/backgrounds/bike01_back.jpg);
+        background-size: auto 100%;
+        background-position: center center;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .para-fore {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 15;
+    }
+
+    .para-mid {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+
+    .para-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/backgrounds/bike01_fore.png);
+        background-size: cover;
+        background-position: center center;
+        z-index: 5;
+    }
+
+/**/
+
+
+.content-box {
+    position: absolute;
     height: 100%;
-    background-image: url(img/backgrounds/bike01_back.jpg);
-    background-size: auto 100%;
-    background-position: center center;
+    width: 50%;
+    top: 0;
+}
+
+.box-left {
+    left: 0;
+}
+
+.box-right {
+    right: 0;
+}
+
+.box-panel-text {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin: auto 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+#panel-02 {
+    height: 700px;
+    background-image: url(img/backgrounds/bike02.jpg);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+#panel-02 h2 {
+    padding-bottom: 15px;
+}
+
+#panel-02 hr {
+    margin: 0 auto 20px auto;
+}
+
+#panel-02 p {
+    margin-bottom: 30px;
+}
+
+
+/* ANIMATED MOCKUPS */
+
+    .mockup-container {
+        position: relative;
+        margin: 0 auto;
+        right: 5%;
+        width: 80%;
+        top: 50%;
+        transform: translateY(-50%) translateZ(0);    
+    }
+
+    .mockup-container-lower {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        top: 50%;
+        transform: translateY(-50%) translateZ(0);    
+    }
+
+    .mockup-back {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-10%) translateZ(0);
+        opacity: 0;
+        transition: all 800ms ease-in-out;
+    }
+
+    .mockup-back-lower {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(-10%) translateZ(0);
+        opacity: 0;
+        transition: all 800ms ease-in-out;
+    }
+
+    .mockup-front {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(10%) translateZ(0);
+        opacity: 0;
+        transition: all 800ms ease-in-out;
+        transition-delay: 300ms;
+    }
+
+    .mockup-front-lower {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) translateX(10%) translateZ(0);
+        opacity: 0;
+        transition: all 800ms ease-in-out;
+        transition-delay: 300ms;
+    }
+
+    .mockup-back-showing {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0) translateZ(0);
+    }
+
+    .mockup-front-showing {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0) translateZ(0);
+    }
+
+/**/
+
+
+#panel-03 {
+    height: 100vh;
+    background-image: url(img/backgrounds/bike03.jpg);
     background-attachment: fixed;
-    overflow: hidden;
 }
 
-.para-fore {
-    position: absolute;
+#panel-03 h2 {
+    padding: 20px 0 15px 0;
+    text-align: center;
+}
+
+#panel-03 hr {
+    width: 70%;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto 25px auto;
+}
+
+
+
+
+
+#panel-04 {
+    height: 700px;
+    background-image: url(img/backgrounds/bike04.jpg);
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
+#panel-04 .secondary-button {
+    width: 48%;
+    min-width: inherit;
+    
+}
+
+#panel-04 h2 {
+    padding-bottom: 15px;
+}
+
+#panel-04 hr {
+    margin: 0 auto 20px auto;
+}
+
+#panel-04 p {
+    margin-bottom: 30px;
+}
+
+.haynes-covers {
     width: 100%;
     height: 100%;
-    z-index: 15;
+    background-image: url(img/backgrounds/haynes_covers01.jpg);
+    background-size: 50% auto;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
 }
 
-.para-mid {
-    position: absolute;
+
+#panel-05 {
+    height: 650px;
+    background-image: url(img/backgrounds/bike05.jpg);
+    background-attachment: fixed;
+    z-index: 25;
+}
+
+#panel-05 h2 {
+    padding: 50px 0 15px 0;
+    text-align: center;
+}
+
+#panel-05 .panel-text hr {
+    width: 80%;
+    max-width: 900px;
+    min-width: 400px;
+    margin: 0 auto 25px auto;
+}
+
+.reviews-scroller {
+    position: relative;
+    height: auto;
+    width: 60%;
+    max-width: 900px;
+    min-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.reviews-content {
+    position: relative;
+    display: inline-block;
+    height: auto;
     width: 100%;
-    height: 100%;
-    z-index: 10;
+    max-width: 900px;
+    min-width: 600px;
+    margin: 0;
 }
 
-.para-back {
-    position: absolute;
+.reviews-spacer {
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: 20%;
+}
+
+.review-box h3 {
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.review-box hr {
     width: 100%;
-    height: 100%;
-    background-image: url(img/backgrounds/bike01_fore.png);
-    background-size: cover;
-    background-position: center center;
-    z-index: 5;
+    max-width: 100%;
+    min-width: none;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 25%;
+}
+
+.review-box {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-left: 2%;
+    width: 73%;
+    white-space: normal;
+}
+
+.review-stars {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 2.5em;
+    color: #f7921e;
+}
+
+.icon-star {
+    margin: -10px;
+}
+
+.icon-star-half {
+    margin: -20px;
+}
+
+blockquote {
+    font-size: 1.5em;
+}
+
+
+
+
+#panel-06 {
+    margin-bottom: 100px;
+    height: 700px;
+    background-image: url(img/backgrounds/bike06.jpg);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    z-index: 50;
+}
+
+#panel-06 .box-panel-text {
+    text-align: center;
+}
+
+#panel-06 h1 {
+    padding-bottom: 20px;
+}
+
+#panel-06 hr {
+    margin-bottom: 25px;
+}
+
+#panel-06 .primary-button {
+    position: relative;
+    display: block;
+    margin: 90px 0 25px 0;
+}
+
+#panel-06 a {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+
+
+
+footer {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #f1f1f1;
+    background: #515151;
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+footer span {
+    display: block;
+    position: relative;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+}
+
+footer a {
+    display: inline-block;
+    position: relative;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+footer .panel-text {
+    padding: 10px 0;
 }
 
 
@@ -154,12 +550,18 @@ button h3 {
 
 
 
+/* FADE IN TRANSITION CLASS */
 
+    .anim-fade {
+        opacity: 0.5;
+        transition: all 200ms ease-in-out;
+    }
 
+    .anim-fade:hover , .anim-fade:active {
+        opacity: 1;
+    }
 
-
-
-
+/**/
 
 
 

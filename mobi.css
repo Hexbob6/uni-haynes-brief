@@ -45,7 +45,7 @@
         min-width: 280px;
     }
     
-    .main-button {
+    .primary-button {
         height: 50px;
         min-width: 240px;
     }
@@ -77,9 +77,18 @@
         min-width: 350px;
     }
     
-    .main-button {
+    .primary-button {
         height: 50px;
         min-width: 280px;
+    }
+    
+}
+
+/* Switch to Mobile Views */
+@media (min-width: 720px)  {
+    
+    #panel-02 {
+        visibility: none;
     }
     
 }
@@ -92,8 +101,20 @@
         font-size: 5.5em;
     }
     
+    h2 {
+        font-size: 3em;
+    }
+    
     h3 {
         font-size: 2em;
+    }
+    
+    h4 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.3em;
     }
     
     #panel-01 .panel-text {
@@ -109,11 +130,20 @@
         min-width: 420px;
     }
     
-    .main-button {
+    .primary-button {
         height: 60px;
         min-width: 280px;
     }
     
+    .secondary-button {
+        height: 50px;
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    #panel-02 {
+        height: 400px;
+    }
 }
 
 
@@ -141,7 +171,7 @@
         min-width: 420px;
     }
     
-    .main-button {
+    .primary-button {
         height: 60px;
         min-width: 320px;
     }
