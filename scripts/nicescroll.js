@@ -11,8 +11,8 @@ $(document).ready(
             cursorborder : "1px solid rgba(255,255,255,0.6)",
             cursoropacitymax : 0.5,
             zindex : 9999,
-//            touchbehavior : true,
-//            grabcursorenabled : false,
+            touchbehavior : true,
+            grabcursorenabled : false,
             
         });
         
@@ -25,8 +25,8 @@ $(document).ready(
             cursorborderradius : "8px",
             cursorborder : "0px",
             autohidemode : false,
-//            touchbehavior : true,
-//            grabcursorenabled : false,
+            touchbehavior : true,
+            grabcursorenabled : false,
             
         });
         
