@@ -41,8 +41,8 @@ $(document).ready(
             cursorwidth : 12,
             cursorborder : "0px",
             cursoropacitymax : 0.5,
-//            touchbehavior : true,
-//            grabcursorenabled : false,
+            touchbehavior : true,
+            grabcursorenabled : false,
             
         });
         
