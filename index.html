@@ -28,21 +28,72 @@
 </head>
 
 <body>
-
-    <header></header>    
     
-    <main id="panel-01" class="panel dark-theme">
+    <div class="loading-overlay">
+       
+        <div class="loading-box vertical-align">
+            
+            <div class="loading-ring" id="loading-front"></div>
+            <div class="loading-ring" id="loading-back"></div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="features-overlay">
+        
+        <div class="features-box-container">
+        
+            <div class="features-box dark-theme vertical-align">
+
+                <div class="features-text">
+
+                    <h2>What's <span>new</span>?</h2>
+                    <hr>
+                    <p>The best-selling <span>Bike Book</span> by <span>Haynes</span> contains invaluable step-by-step guidance on all aspects of bike care, and this new edition has been thoroughly revised and updated to cover the latest developments.<br><br> Packed with over 1,000 colour photographs, this manual is the undisputed market leader in bicycle maintenance and an essential tool for every cyclist.<br><br> With the Haynes Bike Book and a little skill, all cyclists can have the confidence to tackle regular maintenance, running repairs and even major overhauls.</p>
+                    <br><br>
+
+                    <h3>New in the <span>7th Edition</span>:</h3>
+                    <hr>
+
+                    <ul>
+                        <li>New <span>Drivetrain Chapter</span> integrating all aspects of chains, gears, cranks and bottom brackets.</li>
+                        <li><span>Expanded coverage</span> of disc and hydraulic disc brakes.</li> 
+                        <li><span>Full suspension bikes</span> – checking, adjustment and replacement of parts.</li>
+                        <li>More in-depth coverage of <span>suspension forks</span>.</li>
+                        <li><span>Headset</span> replacement.</li>
+                        <li><span>Wheel rim</span> replacement.</li>
+                        <li><span>BMX bikes</span> – more coverage of brakes and cranks.</li>
+                        <li><span>Troubleshooting</span> – a guide to common problems with suggested causes and remedies.</li>
+                        <li><span>Specifications</span> – common tyre sizes, tightening torques, bottom bracket and headset standards.</li>
+                    </ul>
+                    <br><br>
+
+                </div>
+
+                <div class="features-close">
+                    <p class="vertical-align">X</p>
+                </div>
+
+
+            </div>
+        
+        </div>
+        
+    </div> 
+    
+    <header id="panel-01" class="panel dark-theme">
        
         <div class="hero-parallax-container">
            
             <!-- Not in a div to preserve z-index -->
             <a href="https://haynes.com/en-gb/" target="_blank"><img class="logo anim-fade" src="img/logo.svg"></a>
-            <div id="scroll-icon"><img src="img/scroll_icon.svg"></div>
+            <div id="scroll-icon" class="horizontal-align"><img src="img/scroll_icon.svg"></div>
             <!-- -->
             
             <div class="para-fore">
                
-                <button class="primary-button"><h3>BUY NOW</h3></button>
+                <button class="primary-button horizontal-align"><h3>BUY NOW</h3></button>
                 
             </div>
             
@@ -63,19 +114,19 @@
             
         </div>
         
-    </main>
+    </header>
     
     <section id="panel-02" class="panel light-theme">
         
         <div class="content-box box-left">
            
-            <div class="box-panel-text">
+            <div class="box-panel-text both-align">
                
                 <h2>Just the <span>thing</span>.</h2>
                 <hr>
                 <p>Introducing <span>The Bike Book</span> by <span>Haynes</span>. The 7th and most up-to-date addition to one of our most popular series yet.</p>
                 
-                <button class="secondary-button"><h4>What's new?</h4><i class="icon-right-open"></i></button>
+                <button class="secondary-button" id="whats-new"><h4>What's new?</h4><i class="icon-right-open vertical-align"></i></button>
                 
             </div>
             
@@ -83,10 +134,10 @@
            
         <div class="content-box box-right">
             
-            <div class="mockup-container">
+            <div class="mockup-container vertical-align">
                
-                <img class="mockup-back" src="img/backgrounds/book_mockup_back.png">
-                <img class="mockup-front" src="img/backgrounds/book_mockup_front.png">
+                <img class="mockup-back mockup-back-upper" src="img/backgrounds/book_mockup_back.png">
+                <img class="mockup-front mockup-front-upper" src="img/backgrounds/book_mockup_front.png">
                 
             </div>
             
@@ -119,7 +170,7 @@
            
         <div class="content-box box-right">
            
-            <div class="box-panel-text">
+            <div class="box-panel-text both-align">
                
                 <h2>Who are <span>we</span>?</h2>
                 <hr>
@@ -127,13 +178,13 @@
                 
                 <a href="https://haynes.com/en-gb/general-interest-manuals" target="_blank">
                     <button class="secondary-button">
-                        <h4>Full range.</h4><i class="icon-right-open"></i>
+                        <h4>Full range.</h4><i class="icon-right-open vertical-align"></i>
                     </button>
                 </a>
                 
                 <a href="https://corporate.haynes.co.uk/all-about-haynes?_ga=1.247193796.1147332097.1487092195" target="_blank">
                     <button class="tertiary-button">
-                        <h4>More on us.</h4><i class="icon-right-open"></i>
+                        <h4>More on us.</h4><i class="icon-right-open vertical-align"></i>
                     </button>
                 </a>
                 
@@ -243,7 +294,7 @@
                     
                     <hr>
                     
-                    <blockquote>"My first impressions of the brief were skeptical ones, however after viewing the microsite I am convinced The Bike Book is for me! Well done to whoever built the site too, they should definitely get an A..."</blockquote>
+                    <blockquote>"Lorem ipsum dolor sit amet, vix wisi dicam id, ut eos torquatos eloquentiam. Purto nostro vel id, ut fugit splendide usu. An duo ceteros percipitur. Vocibus disputando cum at, nec ignota mollis an."</blockquote>
                     
                 </div>
 
@@ -257,10 +308,10 @@
         
         <div class="content-box box-left">
            
-           <div class="mockup-container-lower">
+           <div class="mockup-container-lower vertical-align">
                
-                <img class="mockup-back-lower" src="img/backgrounds/book_mockup_back.png">
-                <img class="mockup-front-lower" src="img/backgrounds/book_mockup_front.png">
+                <img class="mockup-back mockup-back-lower" src="img/backgrounds/book_mockup_back.png">
+                <img class="mockup-front mockup-front-lower" src="img/backgrounds/book_mockup_front.png">
                 
             </div>
             
@@ -268,13 +319,13 @@
         
         <div class="content-box box-right">
             
-            <div class="box-panel-text">
+            <div class="box-panel-text both-align">
                
                 <h1>Let's <span>go</span>!</h1>
                 <hr>
                 <h3>What's <span>stopping</span> you?</h3>
                 
-                <button class="primary-button"><h3>BUY NOW</h3></button>
+                <button class="primary-button horizontal-align"><h3>BUY NOW</h3></button>
                 
                 <a href="https://haynes.com/en-gb/general-interest-manuals" target="_blank" class="anim-fade">Check out the full range.</a>
                 
@@ -303,6 +354,7 @@
     <!--  EXTERNAL LIBRARIES  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script> <!-- NICESCROLL.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js"></script> <!-- VISIBLE.JS -->
     
     <!--  SCRIPTS  -->
     <script src="scripts/nicescroll.js"></script>
