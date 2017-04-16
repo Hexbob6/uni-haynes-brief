@@ -39,6 +39,6 @@ function parallaxScroll(){
         $(".mockup-back-lower").addClass("mockup-back-showing");
         $(".mockup-front-lower").addClass("mockup-front-showing");
         
-    } 
+    }
     
 };

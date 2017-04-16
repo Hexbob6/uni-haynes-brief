@@ -21,159 +21,449 @@
 */
 
 
-/*  MOBILE Small*/
-@media (max-width: 380px) {
+@media (max-width:1199px){
     
     h1 {
-        font-size: 3.5em;
+        font-size: 6em;
     }
-    
+
+    h2 {
+        font-size: 4.5em;
+    }
+
     h3 {
-        font-size: 1.5em;
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 2.5em;
+    }
+
+    p , li {
+        font-size: 1.7em;
+        white-space: normal;
+    }
+
+    blockquote {
+        font-size: 1.3em;
     }
     
-    #panel-01 .panel-text {
-        top: 25%;
-    }
-    
-    #panel-01 h1 {
-        padding-bottom: 15px;
-    }
-    
-    #panel-01 hr {
-        margin-bottom: 20px;
-        min-width: 280px;
+    #panel-02 {
+        height: 550px;
     }
     
     .primary-button {
-        height: 50px;
-        min-width: 240px;
+        height: 70px;
     }
     
-}
-
-
-/*  MOBILE MEDIUM  */
-@media (max-width: 430px) and (min-width: 380px) {
-    
-    h1 {
-        font-size: 4.5em;
+    #panel-04 {
+        height: 650px;
     }
     
-    h3 {
+    #panel-04 .secondary-button {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    #panel-04 .tertiary-button {
+        width: 100%;
+        margin: auto 0;
+    }
+    
+    #panel-05 {
+        height: 550px;
+    }
+    
+    #panel-05 .review-stars {
         font-size: 2em;
     }
     
-    #panel-01 .panel-text {
-        top: 25%;
+    #panel-06 {
+        height: 500px;
     }
     
-    #panel-01 h1 {
-        padding-bottom: 15px;
+    #panel-06 .primary-button {
+        margin-top: 50px;
     }
     
-    #panel-01 hr {
-        margin-bottom: 20px;
-        min-width: 350px;
+}
+@media (max-width:1023px){
+    
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.8em;
+    }
+
+    p , li {
+        font-size: 1.5em;
+        white-space: normal;
+    }
+
+    blockquote {
+        font-size: 1.2em;
     }
     
     .primary-button {
-        height: 50px;
-        min-width: 280px;
+        min-width: 300px;
+        height: 64px;
     }
     
-}
-
-/* Switch to Mobile Views */
-@media (min-width: 720px)  {
+    .secondary-button , .tertiary-button {
+        display: block;
+        height: 55px;
+        margin: 0 auto;
+    }
+    
+    button i {
+        font-size: 1.3em;
+    }
+    
+    #panel-02 .secondary-button {
+        min-width: 280px;
+        margin: 0;
+    }
     
     #panel-02 {
-        visibility: none;
+        height: 450px
     }
     
-}
-
-
-/*  TABLET */
-@media (max-width: 768px) and (min-width: 430px) {
+    .features-box {
+        min-width: 600px;
+    }
     
-    h1 {
-        font-size: 5.5em;
+    #panel-04 {
+        height: 550px;
+    }
+    
+    #panel-05 {
+        height: 520px
+    }
+    
+    #panel-05 .review-stars {
+        font-size: 1.7em;
+    }
+    
+    #panel-05 .icon-star {
+        margin: -8px;
+    }
+    
+    #panel-05 .icon-star-half {
+        margin: -14px;
+    }
+    
+    #panel-06 {
+        height: 420px;
+    }
+    
+    
+}
+@media (max-width:767px){
+    
+    #panel-06 h1 {
+        font-size: 4.2em
+    }
+    
+    #panel-06 h3 {
+        font-size: 1.6em;
     }
     
     h2 {
         font-size: 3em;
     }
-    
-    h3 {
-        font-size: 2em;
-    }
-    
+
     h4 {
-        font-size: 2em;
+        font-size: 1.8em;
+    }
+
+    p , li {
+        font-size: 1.2em;
+        white-space: normal;
+    }
+
+    blockquote {
+        font-size: 1.2em;
     }
     
-    p {
-        font-size: 1.3em;
+    .features-box {
+        min-width: 550px;
     }
     
-    #panel-01 .panel-text {
-        top: 25%;
-    }
-    
-    #panel-01 h1 {
-        padding-bottom: 15px;
-    }
-    
-    #panel-01 hr {
-        margin-bottom: 20px;
-        min-width: 420px;
-    }
-    
-    .primary-button {
-        height: 60px;
-        min-width: 280px;
-    }
-    
-    .secondary-button {
+    .secondary-button , .tertiary-button {
         height: 50px;
-        width: 100%;
-        min-width: 100%;
     }
     
     #panel-02 {
-        height: 400px;
+        height: 350px;
     }
+    
+    #panel-02 .secondary-button {
+        min-width: 250px;
+        margin: 0;
+    }
+    
+    #panel-04 {
+        height: 480px;
+    }
+    
+    #panel-06 .primary-button {
+        height: 55px;
+        min-width: 250px;
+    }
+    
+    
+    
 }
-
-
-/*  TABLET */
-@media (max-width: 1366px) and (min-width: 768px) {
+@media (max-width:639px){
     
-    h1 {
-        font-size: 6em;
+    .desktop {display: none;}
+    .mobile {display: block;}
+    .content-box.desktop {display: none;}
+    .content-box.mobile {display: block;}
+    
+    
+    
+    h2 {
+        font-size: 3.5em;
     }
     
-    h3 {
-        font-size: 2.5em;
+    blockquote {
+        text-align: center;
     }
     
-    #panel-01 .panel-text {
-        top: 22%;
+    button h4 {
+        font-size: 2em;
     }
     
-    #panel-01 h1 {
-        padding-bottom: 15px;
+    button i {
+        display: none;
     }
     
-    #panel-01 hr {
+    .secondary-button , .tertiary-button {
+        display: block;
+        height: 55px;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+    }
+    
+    .features-box {
+        min-width: 380px;
+    }
+    
+    .content-box {
+        display: block;
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    
+    #panel-02 {
+        height: calc(100vw + 320px);;
+    }
+    
+    #panel-02 .secondary-button {
+        min-width: auto;
+        margin: 0 auto;
+    }
+    
+    #panel-02 .mockup-container {
+        right: 0;
+    }
+    
+    #panel-02 .content-box.box-left {
+        height: 100vw;
+    }
+    
+    #panel-02 .content-box.box-right {
+        height: 250px;
+        text-align: center;
+    }
+    
+    #panel-04 {
+        height: auto;
+        text-align: center;
+    }
+    
+    #panel-04 .tertiary-button {
+        margin: 0 auto;
+    }
+    
+    #panel-04 .content-box.box-left {
+        height: 300px
+    }
+    
+    #panel-04 .content-box.box-right {
+        height: 500px;
+        text-align: center;
+    }
+    
+    #panel-05 {
+        height: auto;
+        white-space: normal;
+    }
+    
+    #panel-05 .panel-text hr {
+        min-width: 0;
+    }
+    
+    .reviews-scroller {
+        width: 70%;
+        min-width: 300px;
+        margin-bottom: 60px;
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+    
+    .reviews-content {
+        min-width: inherit;
+    }
+    
+    .avatar {
+        width: 25%;
+        margin: 0 auto;
         margin-bottom: 20px;
-        min-width: 420px;
+    }
+    
+    .review-box {
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+    
+    .review-box h3 {
+        width: 50%;
+        text-align: center;
+        white-space: nowrap
+    }
+    
+    #panel-05 .review-stars {
+        width: 50%;
+        text-align: center;
+        font-size: 1.5em;
+        top: 6px
+    }
+    
+    #panel-05 .icon-star-half {
+        margin: -13px;
+    }
+    
+    #panel-06 {
+        height: 1000px;
+        background-image: url(img/backgrounds/bike06m.jpg);
+    }
+    
+    #panel-06 h1 , h1 {
+        font-size: 5em;
+    }
+    
+    #panel-06 h3 , h3 {
+        font-size: 2em;
+    }
+    
+}
+@media (max-width:479px){
+    
+    #panel-06 h1 , h1 {
+        font-size: 3.5em;
+    }
+    
+    #panel-06 h3 , h3 {
+        font-size: 1.5em;
+    }
+    
+    h2 {
+        font-size: 2.7em; 
+    }
+    
+    .features-box {
+        min-width: 300px
     }
     
     .primary-button {
-        height: 60px;
-        min-width: 320px;
+        height: 55px;
+        min-width: 250px
+    }
+    
+    #panel-01 hr {
+        width: 80%;
+        min-width: 0;
+    }
+    
+    #panel-02 {
+        height: ;
+    }
+    
+    #panel-03 h2{
+        width: 80%;
+        margin: 0 auto;
+        white-space: normal;
+    }
+    
+    #panel-03 hr {
+        width: 80%;
+        min-width: 0;
+    }
+    
+    #panel-05 h2 {
+        padding-top: 30px;
+    }
+    
+    .reviews-scroller {
+        min-width: 200px;
+    }
+    
+    .review-box h3 {
+        display: block;
+        width: 100%;
+        text-align: center;
+        white-space: nowrap
+    }
+    
+    #panel-05 .review-stars {
+        width: 100%;
+        display: block;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    #panel-06 {
+        height: auto;
+        margin-bottom: 200px;
+    }
+    
+    #panel-06 .content-box {
+        height: 100vw;
+    }
+    
+    #panel-06 .primary-button {
+        margin-top: 30px;
+    }
+    
+    footer {
+        height: 200px;
+    }
+    
+    footer a {
+        display: block;
+    }
+    
+}
+@media (max-width:319px){
+    
+    h2 {
+        white-space: normal;
     }
     
 }

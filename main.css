@@ -10,64 +10,89 @@
 */
 
 
-.loading-overlay {
-    position: fixed;
-    background: #515151;
-    width: 100%;
-    height: 100vh;
-    z-index: 500;
-}
+/*  SCREENSIZE LOGGER  */
 
-.loading-box {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    height: 10vh;
-    width: 10vh;
-    animation: slideIn 150ms ease-in-out;
-}
-
-.loading-ring {
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-}
-
-#loading-back {
-    top: -1em;
-    left: -1em;
-    border: 1em solid #f1f1f1;
-    opacity: 0.3;
-    box-shadow: 0 2px 0 1px;
-}
-
-#loading-front {
-    top: -1em;
-    left: -1em;
-    border: 1em solid transparent;
-    border-top: 1em solid #f7921e;
-    z-index: 1;
-    animation: spin 800ms ease-in-out;
-    animation-iteration-count: 3;
-}
-
-@keyframes spin {
-    from {transform: rotate(0deg);}   
-    to {transform: rotate(360deg);}
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(250px);
-        opacity: 0;
+    .screen-size {
+        position: fixed;
+        height: auto;
+        width: auto;
+        background-color: #f1f1f1;
+        opacity: 0.4;
+        top: 0;
+        right: 0;
+        z-index: 5;
     }
-    to {
-        transform: translateY(-50%);
-        opacity: 1;
-    }
-}
 
+    .screen-size p {
+        padding: 5px 10px;
+        font-size: 1em;
+        color: #515151;
+    }
+
+/**/
+
+
+/*  LOADING DIALOG BOX  */
+
+    .loading-overlay {
+        position: fixed;
+        background: #515151;
+        width: 100%;
+        height: 100vh;
+        z-index: 500;
+    }
+
+    .loading-box {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        height: 10vh;
+        width: 10vh;
+        animation: slideIn 150ms ease-in-out;
+    }
+
+    .loading-ring {
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        border-radius: 50%;
+    }
+
+    #loading-back {
+        top: -1em;
+        left: -1em;
+        border: 1em solid #f1f1f1;
+        opacity: 0.3;
+        box-shadow: 0 2px 0 1px;
+    }
+
+    #loading-front {
+        top: -1em;
+        left: -1em;
+        border: 1em solid transparent;
+        border-top: 1em solid #f7921e;
+        z-index: 1;
+        animation: spin 800ms ease-in-out;
+        animation-iteration-count: 3;
+    }
+
+    @keyframes spin {
+        from {transform: rotate(0deg);}   
+        to {transform: rotate(360deg);}
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(250px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(-50%);
+            opacity: 1;
+        }
+    }
+
+/**/
 
 
 /*  ALIGNMENT CLASSES  */
@@ -524,6 +549,7 @@
 #panel-04 {
     height: 700px;
     background-image: url(img/backgrounds/bike04.jpg);
+    background-position: right center;
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
     z-index: 3;
 }
@@ -554,6 +580,25 @@
     background-attachment: fixed;
     background-repeat: repeat-y;
 }
+
+.haynes-covers-mobile {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/backgrounds/haynes_covers01.jpg);
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    overflow: hidden;
+    animation: slider 6s linear infinite;
+    transform: translate3d(0,0,0);
+    box-shadow: 0 1px 20px 10px rgba(0,0,0,0.3)
+}
+
+@keyframes slider {
+    from { background-position: 0}
+    to {background-position: 227px} /* 46.7% of original size */
+}
+
+
 
 
 #panel-05 {
@@ -627,6 +672,7 @@
         top: 0;
         left: 0;
         width: 25%;
+        opacity: 0.7;
     }
 
     .review-box {
@@ -653,7 +699,7 @@
     }
 
     .icon-star-half {
-        margin: -20px;
+        margin: -16px;
     }
 
 /**/
@@ -692,8 +738,6 @@
 }
 
 
-
-
 footer {
     margin: 0;
     position: fixed;
@@ -724,6 +768,7 @@ footer a {
 
 footer .panel-text {
     padding: 10px 0;
+    font-size: 1em;
 }
 
 
@@ -741,6 +786,11 @@ footer .panel-text {
 /**/
 
 
+/*  SCREENSIZE DISPLAY CLASSES  */
 
+    .desktop {display: block;}
+    .mobile {display: none;}
+
+/**/
 
 

@@ -29,6 +29,8 @@
 
 <body>
     
+    <div class="screen-size"><p>width x height</p></div>
+    
     <div class="loading-overlay">
        
         <div class="loading-box vertical-align">
@@ -116,9 +118,9 @@
         
     </header>
     
-    <section id="panel-02" class="panel light-theme">
+    <section id="panel-02" class="panel light-theme desktop">
         
-        <div class="content-box box-left">
+        <div class="content-box box-left" id="move-down">
            
             <div class="box-panel-text both-align">
                
@@ -132,7 +134,7 @@
             
         </div>
            
-        <div class="content-box box-right">
+        <div class="content-box box-right" id="move-up">
             
             <div class="mockup-container vertical-align">
                
@@ -142,6 +144,36 @@
             </div>
             
         </div>
+        
+    </section>
+    
+    <section id="panel-02" class="panel light-theme mobile">
+        
+        <div class="content-box box-left">
+            
+            <div class="mockup-container vertical-align">
+               
+                <img class="mockup-back mockup-back-upper" src="img/backgrounds/book_mockup_back.png">
+                <img class="mockup-front mockup-front-upper" src="img/backgrounds/book_mockup_front.png">
+                
+            </div>
+            
+        </div>
+        
+        <div class="content-box box-right">
+           
+            <div class="box-panel-text both-align">
+               
+                <h2>Just the <span>thing</span>.</h2>
+                <hr>
+                <p>Introducing <span>The Bike Book</span> by <span>Haynes</span>. The 7th and most up-to-date addition to one of our most popular series yet.</p>
+                
+                <button class="secondary-button" id="whats-new"><h4>What's new?</h4><i class="icon-right-open vertical-align"></i></button>
+                
+            </div>
+            
+        </div>
+           
         
     </section>
     
@@ -160,9 +192,17 @@
     
     <section id="panel-04" class="panel light-theme">
         
-        <div class="content-box box-left">
+        <div class="content-box box-left desktop">
            
             <div class="haynes-covers">
+                <!-- Contains the Haynes Covers background image -->
+            </div>
+            
+        </div>
+          
+        <div class="content-box box-left mobile">
+           
+            <div class="haynes-covers-mobile">
                 <!-- Contains the Haynes Covers background image -->
             </div>
             
@@ -258,7 +298,7 @@
 
                 <div class="review-box">
                    
-                    <h3>Sophie Cartwright</h3>
+                    <h3>Sophie Carter</h3>
                     
                     <div class="review-stars">
                         <i class="icon-star"></i>
