@@ -12,6 +12,8 @@ function parallaxScroll(){
     
     
     // Parallax Scrolling Effects
+    
+    // Hero Parallax
     if ($('#panel-01').visible(true)){
         
         $('.para-fore').css('top', (0 - (wScroll / 16)) + 'px');
@@ -20,6 +22,7 @@ function parallaxScroll(){
         
     }
     
+    // Haynes Covers Parallax
     if ($('#panel-04').visible(true)){
         $('.haynes-covers').css('background-position', '0 ' + (0 + (wScroll / 4)) + 'px');
     }
@@ -27,14 +30,16 @@ function parallaxScroll(){
     
     // Mockup Image Display Effects
     
-    if (wScroll > $("#panel-02").offset().top - 300){
+    // First Mockup Animation
+    if (wScroll > $("#panel-02").offset().top - (wHeight * 0.5)){
         
         $(".mockup-back-upper").addClass("mockup-back-showing");
         $(".mockup-front-upper").addClass("mockup-front-showing");
         
     }
     
-    if (wScroll > $("#panel-06").offset().top - 400){
+    // Second Mockup Animation
+    if (wScroll > $("#panel-06").offset().top - (wHeight * 0.5)){
         
         $(".mockup-back-lower").addClass("mockup-back-showing");
         $(".mockup-front-lower").addClass("mockup-front-showing");

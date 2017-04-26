@@ -10,6 +10,16 @@
 */
 
 
+/*############################################*/
+
+/*  SCREENSIZE DISPLAY CLASSES  */
+
+    .desktop {display: block;}
+    .mobile {display: none;}
+
+/**/
+
+
 /*  SCREENSIZE LOGGER  */
 
     .screen-size {
@@ -30,6 +40,246 @@
     }
 
 /**/
+
+/*############################################*/
+
+
+/*  PANEL THEME STYLING  */
+
+    /* FOR DARK GREY PANELS */
+
+    .dark-theme {
+        background-color: #515151;
+        color: #f1f1f1;
+    }
+
+    .dark-theme span {
+        color: #f7921e;
+        font-weight: bold;
+    }
+
+    .dark-theme hr {
+        border: none;
+        border-top: 3px solid #f1f1f1;
+        opacity: 0.5;
+    }
+
+    .dark-theme ::selection {
+        color: #f1f1f1;
+        background: #f7921e;
+    }
+
+
+    /* FOR WHITE PANELS */
+
+    .light-theme {
+        background-color: #f1f1f1;
+        color: #515151;
+    }
+
+    .light-theme span {
+        color: #f7921e;
+        font-weight: bold;
+    }
+
+    .light-theme hr {
+        border: none;
+        border-top: 3px solid #515151;
+        opacity: 0.7;
+    }
+
+    .light-theme ::selection {
+        color: #f1f1f1;
+        background: #f7921e;
+    }
+
+
+    /* FOR ORANGE PANELS */
+
+    .orange-theme {
+        background-color: #f7921e;
+        color: #f1f1f1;
+    }
+
+    .orange-theme span {
+        color: #515151;
+        font-weight: bold;
+    }
+
+    .orange-theme hr {
+        border: none;
+        border-top: 3px solid #515151;
+        opacity: 0.7;
+    }
+
+    .orange-theme ::selection {
+        color: #f1f1f1;
+        background: #515151;
+    }
+
+/**/
+
+/*############################################*/
+
+
+/*  ALIGNMENT CLASSES  */
+
+    .vertical-align {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .horizontal-align {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .both-align {
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+
+/**/
+
+
+/*  INITIAL STYLING  */
+
+    h1 {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 6em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 2.5em;
+    }
+
+    p , li {
+        font-size: 2em;
+        white-space: normal;
+    }
+
+    blockquote {
+        font-size: 1.5em;
+    }
+
+/**/
+
+
+/*  CONTENT STYLING  */
+
+    .panel {
+        position: relative;
+        white-space: nowrap;
+        background-size: cover;
+        background-position: center center;
+        overflow: hidden;
+    }
+
+    .content-box {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        top: 0;
+    }
+
+    .box-left {
+        left: 0;
+    }
+
+    .box-right {
+        right: 0;
+    }
+
+    .box-panel-text {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        margin: auto 0;
+    }
+
+/**/
+
+
+/*  BUTTON STYLING  */
+
+    button {
+        margin: auto;
+        color: #f1f1f1;
+        background-color: #51ec7c;
+    }
+
+    button h3 {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button h4 {
+        position: absolute;
+        left: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    button i {
+        padding-top: 4px;
+        position: absolute;
+        font-size: 1.5em;
+        right: 15px;
+    }
+
+    .primary-button {
+        position: absolute;
+        height: 80px;
+        width: 30%;
+        min-width: 400px;
+        border-radius: 40px;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.3);
+        bottom: 20%;
+    }
+
+    .primary-button:active {
+        box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+        left: 50%;
+        transform: translateY(3px) translateX(-50%);
+    }
+
+    .secondary-button {
+        position: relative;
+        height: 65px;
+        width: 60;
+        min-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .tertiary-button {
+        position: relative;
+        height: 65px;
+        width: 48%;
+        margin-left: 2%;
+        background-color: #51e7ec;
+        border-radius: 10px;
+        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .secondary-button:active , .tertiary-button:active {
+        box-shadow: 0 2px rgba(0, 0, 0, 0.8);
+        transform: translateY(3px);
+    }
+
+/**/
+
+/*############################################*/
 
 
 /*  LOADING DIALOG BOX  */
@@ -90,57 +340,6 @@
             transform: translateY(-50%);
             opacity: 1;
         }
-    }
-
-/**/
-
-
-/*  ALIGNMENT CLASSES  */
-
-    .vertical-align {
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    .horizontal-align {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .both-align {
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }
-
-/**/
-
-
-/*  INITIAL STYLING  */
-
-    h1 {
-        font-size: 8em;
-    }
-
-    h2 {
-        font-size: 6em;
-    }
-
-    h3 {
-        font-size: 3em;
-    }
-
-    h4 {
-        font-size: 2.5em;
-    }
-
-    p , li {
-        font-size: 2em;
-        white-space: normal;
-    }
-
-    blockquote {
-        font-size: 1.5em;
     }
 
 /**/
@@ -252,138 +451,64 @@
     }
 /**/
 
-
-.panel {
-    position: relative;
-    white-space: nowrap;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
-}
-
-#panel-01 {
-    height: 100vh;
-    z-index: 2;
-}
-
-#panel-01 .panel-text {
-    width: 100%;
-    position: absolute;
-    top: 25%;
-}
-
-#panel-01 h1 {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-#panel-01 hr {
-    width: 70%;
-    max-width: 800px;
-    min-width: 400px;
-    margin: 0 auto 25px auto;
-}
-
-#panel-01 h3 {
-    text-align: center;
-}
-
-.logo {
-    position: absolute;
-    width: 10%;
-    max-width: 150px;
-    min-width: 100px;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-}
+/*############################################*/
 
 
-/*  BUTTON STYLING  */
+/*  PANEL 01  */
 
-    button {
-        margin: auto;
-        color: #f1f1f1;
-        background-color: #51ec7c;
+    #panel-01 {
+        height: 100vh;
+        z-index: 2;
     }
 
-    button h3 {
+    #panel-01 .panel-text {
         width: 100%;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 25%;
     }
 
-    button h4 {
+    #panel-01 h1 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #panel-01 hr {
+        width: 70%;
+        max-width: 800px;
+        min-width: 400px;
+        margin: 0 auto 25px auto;
+    }
+
+    #panel-01 h3 {
+        text-align: center;
+    }
+
+    .logo {
         position: absolute;
+        width: 10%;
+        max-width: 150px;
+        min-width: 100px;
+        top: 20px;
         left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
+        z-index: 100;
     }
 
-    button i {
-        padding-top: 4px;
+    #scroll-icon {
         position: absolute;
-        font-size: 1.5em;
-        right: 15px;
-    }
-
-    .primary-button {
-        position: absolute;
-        height: 80px;
-        width: 30%;
-        min-width: 400px;
-        border-radius: 40px;
-        box-shadow: 0 5px rgba(0, 0, 0, 0.3);
-        bottom: 20%;
-    }
-
-    .primary-button:active {
-        box-shadow: 0 2px rgba(0, 0, 0, 0.5);
-        left: 50%;
-        transform: translateY(3px) translateX(-50%);
-    }
-
-    .secondary-button {
-        position: relative;
-        height: 65px;
-        width: 60;
-        min-width: 400px;
-        border-radius: 10px;
-        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .tertiary-button {
-        position: relative;
-        height: 65px;
-        width: 48%;
-        margin-left: 2%;
-        background-color: #51e7ec;
-        border-radius: 10px;
-        box-shadow: 0 5px rgba(0, 0, 0, 0.5);
-    }
-
-    .secondary-button:active , .tertiary-button:active {
-        box-shadow: 0 2px rgba(0, 0, 0, 0.8);
-        transform: translateY(3px);
+        margin: auto 0;
+        width: 3%;
+        height: auto;
+        max-width: 40px;
+        min-width: 30px;
+        opacity: 0.5;
+        bottom: 5%;
+        z-index: 100;
     }
 
 /**/
 
 
-#scroll-icon {
-    position: absolute;
-    margin: auto 0;
-    width: 3%;
-    max-width: 40px;
-    min-width: 30px;
-    opacity: 0.5;
-    bottom: 5%;
-    z-index: 100;
-}
-
-
-/*  PARALLAX  */
+/*  PANEL 01 - PARALLAX  */
 
     .hero-parallax-container {
         position: relative;
@@ -423,32 +548,7 @@
 /**/
 
 
-/*  CONTENT STYLING  */
-
-    .content-box {
-        position: absolute;
-        height: 100%;
-        width: 50%;
-        top: 0;
-    }
-
-    .box-left {
-        left: 0;
-    }
-
-    .box-right {
-        right: 0;
-    }
-
-    .box-panel-text {
-        position: absolute;
-        width: 80%;
-        height: auto;
-        margin: auto 0;
-    }
-
-/**/
-
+/*  PANEL 02  */
 
 #panel-02 {
     height: 700px;
@@ -468,6 +568,8 @@
 #panel-02 p {
     margin-bottom: 30px;
 }
+
+/**/
 
 
 /* ANIMATED MOCKUPS */
@@ -523,102 +625,123 @@
 /**/
 
 
-#panel-03 {
-    height: 100vh;
-    background-image: url(img/backgrounds/bike03.jpg);
-    background-attachment: fixed;
-    z-index: 2;
-}
+/* FADE-IN TRANSITION CLASS */
 
-#panel-03 h2 {
-    padding: 20px 0 15px 0;
-    text-align: center;
-}
+    .anim-fade {
+        opacity: 0.5;
+        transition: all 200ms ease-in-out;
+    }
 
-#panel-03 hr {
-    width: 70%;
-    max-width: 800px;
-    min-width: 400px;
-    margin: 0 auto 25px auto;
-}
+    .anim-fade:hover , .anim-fade:active {
+        opacity: 1;
+    }
+
+/**/
 
 
+/*  PANEL 03  */
+
+    #panel-03 {
+        height: 100vh;
+        background-image: url(img/backgrounds/bike03.jpg);
+        background-attachment: fixed;
+        z-index: 2;
+    }
+
+    #panel-03 h2 {
+        padding: 20px 0 15px 0;
+        text-align: center;
+    }
+
+    #panel-03 hr {
+        width: 70%;
+        max-width: 800px;
+        min-width: 400px;
+        margin: 0 auto 25px auto;
+    }
+
+/**/
 
 
+/*  PANEL 04  */
 
-#panel-04 {
-    height: 700px;
-    background-image: url(img/backgrounds/bike04.jpg);
-    background-position: right center;
-    box-shadow: 0 0 50px rgba(0,0,0,0.5);
-    z-index: 3;
-}
+    #panel-04 {
+        height: 700px;
+        background-image: url(img/backgrounds/bike04.jpg);
+        background-position: right center;
+        box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        z-index: 3;
+    }
 
-#panel-04 .secondary-button {
-    width: 48%;
-    min-width: inherit;
-    
-}
+    #panel-04 .secondary-button {
+        width: 48%;
+        min-width: inherit;
 
-#panel-04 h2 {
-    padding-bottom: 15px;
-}
+    }
 
-#panel-04 hr {
-    margin: 0 auto 20px auto;
-}
+    #panel-04 h2 {
+        padding-bottom: 15px;
+    }
 
-#panel-04 p {
-    margin-bottom: 30px;
-}
+    #panel-04 hr {
+        margin: 0 auto 20px auto;
+    }
 
-.haynes-covers {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/backgrounds/haynes_covers01.jpg);
-    background-size: 50% auto;
-    background-attachment: fixed;
-    background-repeat: repeat-y;
-}
+    #panel-04 p {
+        margin-bottom: 30px;
+    }
 
-.haynes-covers-mobile {
-    width: 100%;
-    height: 100%;
-    background-image: url(img/backgrounds/haynes_covers01.jpg);
-    background-size: auto 100%;
-    background-repeat: repeat-x;
-    overflow: hidden;
-    animation: slider 6s linear infinite;
-    transform: translate3d(0,0,0);
-    box-shadow: 0 1px 20px 10px rgba(0,0,0,0.3)
-}
+    .haynes-covers {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/backgrounds/haynes_covers01.jpg);
+        background-size: 50% auto;
+        background-attachment: fixed;
+        background-repeat: repeat-y;
+    }
 
-@keyframes slider {
-    from { background-position: 0}
-    to {background-position: 227px} /* 46.7% of original size */
-}
+    .haynes-covers-mobile {
+        width: 100%;
+        height: 100%;
+        background-image: url(img/backgrounds/haynes_covers01.jpg);
+        background-size: auto 100%;
+        background-repeat: repeat-x;
+        overflow: hidden;
+        animation: slider 6s linear infinite;
+        transform: translate3d(0,0,0);
+        box-shadow: 0 1px 20px 10px rgba(0,0,0,0.3)
+    }
+
+    @keyframes slider {
+        from { background-position: 0}
+        to {background-position: 227px} /* 46.7% of original size */
+    }
+
+/**/
 
 
+/*  PANEL 05  */
 
+    #panel-05 {
+        height: 650px;
+        background-image: url(img/backgrounds/bike05.jpg);
+        background-attachment: fixed;
+        z-index: 2;
+    }
 
-#panel-05 {
-    height: 650px;
-    background-image: url(img/backgrounds/bike05.jpg);
-    background-attachment: fixed;
-    z-index: 2;
-}
+    #panel-05 h2 {
+        padding: 50px 0 15px 0;
+        text-align: center;
+    }
 
-#panel-05 h2 {
-    padding: 50px 0 15px 0;
-    text-align: center;
-}
+    #panel-05 .panel-text hr {
+        width: 80%;
+        max-width: 900px;
+        min-width: 400px;
+        margin: 0 auto 25px auto;
+    }
 
-#panel-05 .panel-text hr {
-    width: 80%;
-    max-width: 900px;
-    min-width: 400px;
-    margin: 0 auto 25px auto;
-}
+/**/
 
 
 /*  REVIEWS  */
@@ -705,92 +828,76 @@
 /**/
 
 
+/*  PANEL 06  */
 
-#panel-06 {
-    margin-bottom: 100px;
-    height: 700px;
-    background-image: url(img/backgrounds/bike06.jpg);
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    z-index: 3;
-}
-
-#panel-06 .box-panel-text {
-    text-align: center;
-}
-
-#panel-06 h1 {
-    padding-bottom: 20px;
-}
-
-#panel-06 hr {
-    margin-bottom: 25px;
-}
-
-#panel-06 .primary-button {
-    position: relative;
-    display: block;
-    margin: 90px 0 25px 0;
-}
-
-#panel-06 a {
-    font-size: 1.2em;
-    text-decoration: underline;
-}
-
-
-footer {
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    font-size: 1.2em;
-    color: #f1f1f1;
-    background: #515151;
-    z-index: 1;
-    transform: translateZ(0);
-}
-
-footer span {
-    display: block;
-    position: relative;
-    font-weight: bold;
-    padding: 10px 0 5px 0;
-}
-
-footer a {
-    display: inline-block;
-    position: relative;
-    text-decoration: underline;
-    padding: 10px;
-}
-
-footer .panel-text {
-    padding: 10px 0;
-    font-size: 1em;
-}
-
-
-/* FADE-IN TRANSITION CLASS */
-
-    .anim-fade {
-        opacity: 0.5;
-        transition: all 200ms ease-in-out;
+    #panel-06 {
+        margin-bottom: 100px;
+        height: 700px;
+        background-image: url(img/backgrounds/bike06.jpg);
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        z-index: 3;
     }
 
-    .anim-fade:hover , .anim-fade:active {
-        opacity: 1;
+    #panel-06 .box-panel-text {
+        text-align: center;
+    }
+
+    #panel-06 h1 {
+        padding-bottom: 20px;
+    }
+
+    #panel-06 hr {
+        margin-bottom: 25px;
+    }
+
+    #panel-06 .primary-button {
+        position: relative;
+        display: block;
+        margin: 90px 0 25px 0;
+    }
+
+    #panel-06 a {
+        font-size: 1.2em;
+        text-decoration: underline;
     }
 
 /**/
 
 
-/*  SCREENSIZE DISPLAY CLASSES  */
+/*  FOOTER  */
 
-    .desktop {display: block;}
-    .mobile {display: none;}
+    footer {
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        font-size: 1.2em;
+        color: #f1f1f1;
+        background: #515151;
+        z-index: 1;
+        transform: translateZ(0);
+    }
+
+    footer span {
+        display: block;
+        position: relative;
+        font-weight: bold;
+        padding: 10px 0 5px 0;
+    }
+
+    footer a {
+        display: inline-block;
+        position: relative;
+        text-decoration: underline;
+        padding: 10px;
+    }
+
+    footer .panel-text {
+        padding: 10px 0;
+        font-size: 1em;
+    }
 
 /**/
-
 
