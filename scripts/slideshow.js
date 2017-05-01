@@ -1,6 +1,3 @@
-
-
-
 //Changing Page Images when Chapter IDs are hovered
 $("#chapter01").hover(
     
@@ -58,3 +55,39 @@ $("#chapter08").hover(
     
 );
 
+
+
+// Mobile Slideshow
+var slideCounter = 1;
+
+$prev = $('.prev');
+$next = $('.next');
+
+$next.click(function(){
+    
+    slideCounter = (slideCounter + 1);
+    
+    if (slideCounter > 8) {
+        slideCounter = 0;
+    }
+    
+});
+
+$prev.click(function(){
+    
+    slideCounter = (slideCounter - 1);
+    
+    if (slideCounter < 0) {
+        slideCounter = 8;
+    }
+    
+});
+
+
+
+$(document).click(function() {
+    
+    console.log(slideCounter);
+    
+    
+});

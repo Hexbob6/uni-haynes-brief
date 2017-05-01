@@ -15,6 +15,7 @@
 /*  SCREENSIZE DISPLAY CLASSES  */
 
     .desktop {display: block;}
+    .tablet {display: none;}
     .mobile {display: none;}
 
 /**/
