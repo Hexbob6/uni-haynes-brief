@@ -34,8 +34,8 @@ $(window).bind('resize', function(e) {
     else {
         
         $('button h4').removeClass('both-align');
-        
-    }
+    };
+    
     
 });
 
@@ -55,4 +55,5 @@ else {
 // Adds the Scrolling effect to the Haynes Covers Showcase on mobile
 function animateBG() {
     $('.haynes-cover-mobile').animate({backgroundPosition: '+=5'}, 12, animateBG);
-};
+}
+

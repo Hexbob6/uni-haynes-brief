@@ -21,6 +21,7 @@
 */
 
 
+/* DOCUMENT MEDIA QUERIES */
 @media (max-width:1199px){
     
     h1 {
@@ -465,6 +466,23 @@
     
     h2 {
         white-space: normal;
+    }
+    
+}
+
+
+/* SLIDESHOW MEDIA QUERIES */
+@media (max-width:1400px){
+    
+    #panel-03 h3 {
+        font-size: 2em;
+    }
+    
+}
+@media (max-width:1199px){
+    
+    #panel-03 h3 {
+        font-size: 1.7em;
     }
     
 }
