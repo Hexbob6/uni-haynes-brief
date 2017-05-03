@@ -15,7 +15,6 @@
 /*  SCREENSIZE DISPLAY CLASSES  */
 
     .desktop {display: block;}
-    .tablet {display: none;}
     .mobile {display: none;}
 
 /**/
@@ -685,59 +684,69 @@
 /**/
 
 
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    height: 42vw;
-    text-align: center;
-}
+/*  SLIDESHOW STYLING  */
 
-.slideshow-col-small {
-    display: inline-block;
-    position: relative;
-    height: 100%;
-    width: 30%;
-    text-align: left;
-}
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        height: 42vw;
+        text-align: center;
+    }
 
-.slideshow-col-image {
-    display: inline-block;
-    position: relative;
-    height: 100%;
-    width: 30%;    
-}
+    .slideshow-col-small {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 30%;
+        text-align: left;
+    }
 
-.slideshow-text-left {
-    position: absolute;
-    left: 0;
-}
+    .slideshow-col-image {
+        display: inline-block;
+        position: relative;
+        height: 100%;
+        width: 30%;    
+    }
 
-.slideshow-text-right {
-    position: absolute;
-    right: 0;
-}
+    .slideshow-text-left {
+        position: absolute;
+        left: 0;
+    }
 
+    .slideshow-text-right {
+        position: absolute;
+        right: 0;
+    }
 
-[class^="icon-icon"]:before, [class*=" icon-icon"]:before {
-    font-size: 1.8em;
-    vertical-align: middle;
-}
+    [class^="icon-icon"]:before, [class*=" icon-icon"]:before {
+        font-size: 1.8em;
+        vertical-align: middle;
+    }
 
-.slideshow-col-image img {
-    position: absolute;
-    display: block;
-    width: 85%;
-    border: solid 15px #515151;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-}
+    .slideshow-col-image img {
+        position: absolute;
+        display: block;
+        width: 85%;
+        border: solid 15px #515151;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
 
-.page-image {
-    opacity: 0;
-    transition: all 150ms ease-in-out;
-}
+    .page-image {
+        opacity: 0;
+        transition: all 150ms ease-in-out;
+    }
 
+    .page-text-mobile {
+        opacity: 0;
+    }
+
+    .mobile-text-active {
+        opacity: 1;
+    }
+
+/**/
 
 
 /*  PANEL 04  */

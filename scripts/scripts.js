@@ -14,14 +14,16 @@ $('.loading-overlay').delay(2600).fadeOut(200);
 // Logs the Browser Window on resize
 $(window).bind('resize', function(e) {
     
-    var screenWidth = $(window).width();
-    var screenHeight = $(window).height();
-    var screenSize = screenWidth + ' x ' + screenHeight;
+//    Screensize widget code
     
-    // Adds the window screensize to the Screensize box
-    $('.screen-size p').html(screenSize);
-    console.log(screenSize);
-    
+//    var screenWidth = $(window).width();
+//    var screenHeight = $(window).height();
+//    var screenSize = screenWidth + ' x ' + screenHeight;
+//    
+//    // Adds the window screensize to the Screensize box
+//    $('.screen-size p').html(screenSize);
+//    console.log(screenSize);
+//    
     
     
     // Aligns button text on resize

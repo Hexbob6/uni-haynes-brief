@@ -58,11 +58,18 @@ $("#chapter08").hover(
 
 
 // Mobile Slideshow
-var slideCounter = 1;
+var slideCounter = 0;
+
+// Sets default text
+$('#mobile-chapter00').css({'opacity' : '1'});
+
+// Sets default image
+$('.page-image-mobile').not('.page-image-mobile#mobile-page0' + slideCounter).hide();
 
 $prev = $('.prev');
 $next = $('.next');
 
+// Next button
 $next.click(function(){
     
     slideCounter = (slideCounter + 1);
@@ -71,8 +78,21 @@ $next.click(function(){
         slideCounter = 0;
     }
     
+    
+    // Changes text visibility based on slidecount    
+    $('.page-text-mobile').not('.page-text-mobile#mobile-chapter0' + slideCounter).css({'opacity' : '0'});
+    
+    $("#mobile-chapter0" + slideCounter).css({'opacity' : '1'});
+    
+    
+    // Changes image based on slidecount
+    $('.page-image-mobile').not('.page-image-mobile#mobile-page0' + slideCounter).delay(100).hide(0).css({'z-index' : '0'});
+    
+    $("#mobile-page0" + slideCounter).fadeIn(100);    
+    
 });
 
+// Previous button
 $prev.click(function(){
     
     slideCounter = (slideCounter - 1);
@@ -81,13 +101,21 @@ $prev.click(function(){
         slideCounter = 8;
     }
     
+    
+    // Changes text visibility based on slidecount 
+    $('.page-text-mobile').not('.page-text-mobile#mobile-chapter0' + slideCounter).css({'opacity' : '0'});
+    
+    $("#mobile-chapter0" + slideCounter).css({'opacity' : '1'});
+    
+    
+    // Changes image based on slidecount
+    $('.page-image-mobile').not('.page-image-mobile#mobile-page0' + slideCounter).delay(100).hide(0).css({'z-index' : '0'});
+    
+    $("#mobile-page0" + slideCounter).fadeIn(100);
+    
 });
 
 
+// Displays slideCount in the console
 
-$(document).click(function() {
-    
-    console.log(slideCounter);
-    
-    
-});
+//$(document).click(function() {console.log(slideCounter);});
